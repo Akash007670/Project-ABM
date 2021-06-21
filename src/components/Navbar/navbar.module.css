@@ -1,0 +1,69 @@
+.navbar-wrapper {
+  width: 100%;
+  height: 4em;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-logo > * + * {
+  margin: 0 0 0 1em;
+}
+.logo {
+  width: 30px;
+}
+.logo-text {
+  height: 20px;
+}
+.nav-items {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav-items > * + * {
+  margin: 0 0 0 2em;
+}
+.current-user {
+  display: flex;
+  align-items: center;
+}
+.current-user > * + * {
+  margin: 0 0 0 0.8em;
+}
+.current-user p {
+  font-weight: 500;
+}
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(197, 206, 224, 1);
+}
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+.nav-icons > * + * {
+  margin: 0 0 0 1em;
+}
+.nav-item-icon {
+  cursor: pointer;
+}
+/* .nav-item-icon > svg {
+  width: 18px;
+} */
+.bell,
+.help {
+  width: 25px;
+  height: 25px;
+}
