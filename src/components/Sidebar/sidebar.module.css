@@ -1,0 +1,51 @@
+.sidebar-wrapper {
+  width: 270px;
+  height: 100%;
+  min-height: calc(100vh - 4em);
+  background: rgba(252, 251, 255, 1);
+}
+.route-link {
+  position: relative;
+  width: calc(100% - 0.4em);
+  margin-left: 0.4em;
+  padding: 0.8em 1.6em;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.route-link > * + * {
+  margin: 0 0 0 0.8em;
+}
+.route-link > svg {
+  width: 22px;
+  height: 22px;
+}
+.route-link > svg > path {
+  fill: #828282;
+}
+.route-link > p {
+  font-size: 0.93em;
+  color: rgba(130, 130, 130, 1);
+}
+
+.active-link {
+  position: relative;
+  background: #e1d8f1;
+}
+.active-link > p {
+  color: rgba(103, 58, 183, 1);
+}
+.active-link > svg > path {
+  fill: rgba(103, 58, 183, 1);
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: rgba(103, 58, 183, 1);
+}
