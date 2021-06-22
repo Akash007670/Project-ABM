@@ -16,6 +16,4 @@ body {
   flex: 1;
   min-height: calc(100vh-4em);
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
