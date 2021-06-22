@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, Sidebar } from "./components";
+import { Navbar, ScreenOne, Sidebar } from "./components";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -10,17 +10,13 @@ function App() {
         <Sidebar />
         <div className="route-wrapper">
           <Switch>
-            <Route exact path="/" render={() => <div>Product Page</div>} />
+            <Route exact path="/" render={() => <ScreenOne />} />
             <Route
               exact
               path="/organisation-profile"
-              render={() => <div>Organisation Page</div>}
+              render={() => <ScreenOne />}
             />
-            <Route
-              exact
-              path="/access-control"
-              render={() => <div>Access Page</div>}
-            />
+            <Route exact path="/access-control" render={() => <ScreenOne />} />
           </Switch>
         </div>
       </div>
