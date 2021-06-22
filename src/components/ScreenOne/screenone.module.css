@@ -1,0 +1,95 @@
+.main-ui-wrapper {
+  display: flex;
+  border: 2px solid red;
+  width: 100%;
+}
+
+.nav-wrapper {
+  width: 100%;
+  height: 4em;
+  padding: 0 2em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 1rem;
+  border-bottom: 1px solid rgba(207, 211, 218, 0.5);
+}
+
+.permissions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  height: 4rem;
+}
+
+.activity {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 4rem;
+  gap: 1em;
+}
+
+.text {
+  color: #333333;
+}
+
+.sync {
+  width: 25px;
+  height: 25px;
+}
+
+.dynamic-ui-wrapper {
+  width: 100%;
+  height: 4em;
+  padding: 0 2em;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 1rem;
+  top: 6em;
+  /* background: red; */
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  gap: 8px;
+  height: 40px;
+  width: 190px;
+  background: #673ab7;
+  border-radius: 5px;
+  border: none;
+}
+
+.logo {
+  display: flex;
+  margin-left: 15px;
+  height: 13px;
+  width: 15px;
+}
+
+.add-button {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+}
+
+.pencil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+}
+.delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  height: 20px;
+}
