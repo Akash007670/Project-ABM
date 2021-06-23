@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className={Styles["nav-items"]}>
         <div className={Styles["current-user"]}>
           <div className={Styles["profile"]}></div>
-          <p>Kishore</p>
+          <p>Akash</p>
         </div>
         <div className={Styles["nav-icons"]}>
           <span className={Styles["nav-item-icon"]}>
