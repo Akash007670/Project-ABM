@@ -4,16 +4,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+*::-webkit-scrollbar {
+  width: 0.4em;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(103, 58, 183, 1);
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
 .main-wrapper {
   width: 100%;
-  min-height: calc(100vh - 4em);
+  height: calc(100vh - 4em);
   display: flex;
 }
 .route-wrapper {
   flex: 1;
-  min-height: calc(100vh-4em);
+  height: calc(100vh-4em);
   display: flex;
+  position: relative;
+  overflow-y: scroll;
 }
