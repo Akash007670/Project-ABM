@@ -1,5 +1,5 @@
 import "./App.css";
-import { Navbar, ScreenOne, Sidebar } from "./components";
+import { Navbar, ScreenOne, ScreenTwo, Sidebar } from "./components";
 import { Switch, Route } from "react-router-dom";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             <Route
               exact
               path="/organisation-profile"
-              render={() => <ScreenOne />}
+              render={() => <ScreenTwo />}
             />
             <Route exact path="/access-control" render={() => <ScreenOne />} />
           </Switch>
