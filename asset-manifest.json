@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Project-ABM/static/css/main.b0869c98.chunk.css",
+    "main.js": "/Project-ABM/static/js/main.6187f7ed.chunk.js",
+    "main.js.map": "/Project-ABM/static/js/main.6187f7ed.chunk.js.map",
+    "runtime-main.js": "/Project-ABM/static/js/runtime-main.c6988183.js",
+    "runtime-main.js.map": "/Project-ABM/static/js/runtime-main.c6988183.js.map",
+    "static/js/2.eded060a.chunk.js": "/Project-ABM/static/js/2.eded060a.chunk.js",
+    "static/js/2.eded060a.chunk.js.map": "/Project-ABM/static/js/2.eded060a.chunk.js.map",
+    "index.html": "/Project-ABM/index.html",
+    "static/css/main.b0869c98.chunk.css.map": "/Project-ABM/static/css/main.b0869c98.chunk.css.map",
+    "static/js/2.eded060a.chunk.js.LICENSE.txt": "/Project-ABM/static/js/2.eded060a.chunk.js.LICENSE.txt",
+    "static/media/access.c295c18b.svg": "/Project-ABM/static/media/access.c295c18b.svg",
+    "static/media/add.c6815417.svg": "/Project-ABM/static/media/add.c6815417.svg",
+    "static/media/add_circle_outline.ec231442.svg": "/Project-ABM/static/media/add_circle_outline.ec231442.svg",
+    "static/media/approval.b4b16f80.svg": "/Project-ABM/static/media/approval.b4b16f80.svg",
+    "static/media/arrow_back.4ae59306.svg": "/Project-ABM/static/media/arrow_back.4ae59306.svg",
+    "static/media/bell.a2b7f076.svg": "/Project-ABM/static/media/bell.a2b7f076.svg",
+    "static/media/delete.e0180a62.svg": "/Project-ABM/static/media/delete.e0180a62.svg",
+    "static/media/eye.cba4c0b9.svg": "/Project-ABM/static/media/eye.cba4c0b9.svg",
+    "static/media/help.9068d9f2.svg": "/Project-ABM/static/media/help.9068d9f2.svg",
+    "static/media/logo.7cfbe64b.svg": "/Project-ABM/static/media/logo.7cfbe64b.svg",
+    "static/media/logo2.2fadcf25.svg": "/Project-ABM/static/media/logo2.2fadcf25.svg",
+    "static/media/on-label.35e87b3e.svg": "/Project-ABM/static/media/on-label.35e87b3e.svg",
+    "static/media/organisation.0add8632.svg": "/Project-ABM/static/media/organisation.0add8632.svg",
+    "static/media/pencil.ae63a198.svg": "/Project-ABM/static/media/pencil.ae63a198.svg",
+    "static/media/permissions.2bad7b3e.svg": "/Project-ABM/static/media/permissions.2bad7b3e.svg",
+    "static/media/projects.1241cda6.svg": "/Project-ABM/static/media/projects.1241cda6.svg",
+    "static/media/sync.98cfb562.svg": "/Project-ABM/static/media/sync.98cfb562.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6988183.js",
+    "static/js/2.eded060a.chunk.js",
+    "static/css/main.b0869c98.chunk.css",
+    "static/js/main.6187f7ed.chunk.js"
+  ]
+}
