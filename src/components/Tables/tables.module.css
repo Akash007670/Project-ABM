@@ -1,0 +1,141 @@
+.table-container {
+  width: 100%;
+  height: 100%;
+  padding: 3em 5em;
+  display: flex;
+  flex-direction: column;
+}
+.table-container > * + * {
+  margin: 2em 0 0 0;
+}
+.table-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.table-header > * + * {
+  margin: 0 0 0 2em;
+}
+.add-role {
+  background: rgba(103, 58, 183, 1);
+  outline: none;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8em 3.5em;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.add-role > p {
+  font-weight: 500;
+}
+.add-role-icon {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+}
+.add-role > * + * {
+  margin: 0 0 0 1em;
+}
+.table-header-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.table-header-icon > svg {
+  width: 100%;
+  height: 100%;
+}
+.table-header-icon:nth-of-type(2) {
+  width: 18px;
+  height: 22px;
+}
+/* .table-wrapper {
+  } */
+.table {
+  width: 100%;
+  background: white;
+  border-spacing: 0px !important;
+}
+.table-head {
+  background: rgba(242, 242, 242, 1);
+}
+.table-head > th {
+  border: none;
+  padding: 1.2em;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  border-bottom: 2px solid #e5e5e5;
+}
+.table-head > th:nth-of-type(2) {
+  text-align: left;
+}
+.data-row > td {
+  padding: 1.2em;
+  font-weight: 400;
+  font-size: 0.9em;
+  border-bottom: 2px solid #e5e5e5;
+  text-align: center;
+}
+
+.data-row:hover {
+  background: rgba(242, 242, 242, 1);
+}
+
+.data-row > td:nth-of-type(2) {
+  text-align: left;
+}
+.access,
+.restricted {
+  margin: auto;
+  padding: 0.3em 0.6em;
+  width: 160px;
+  border-radius: 20px;
+}
+.access {
+  background: rgba(39, 174, 96, 0.3);
+  color: rgba(39, 174, 96, 1);
+  border: 1px solid #27ae60;
+}
+.restricted {
+  color: rgba(255, 8, 8, 1);
+  background: rgba(255, 8, 8, 0.3);
+  border: 1px solid #ff0808;
+}
+.initial-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+}
+
+.eye-logo {
+  cursor: pointer;
+}
+
+.back-nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* background: red; */
+}
+
+.nav-text {
+  font-weight: 500;
+  color: #673ab7;
+}
+.back-nav-wrapper > svg {
+  cursor: pointer;
+}
+
+.back-nav-wrapper > * + * {
+  margin: 0 0 0 1.5em;
+}
