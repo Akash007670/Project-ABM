@@ -1,26 +1,33 @@
 import "./App.css";
-import { Navbar, ScreenOne, ScreenTwo, Sidebar } from "./components";
+import { Navbar, ScreenOne, Sidebar } from "./components";
 import { Switch, Route } from "react-router-dom";
+import TableDataProvider from "./context";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <div className="main-wrapper">
-        <Sidebar />
-        <div className="route-wrapper">
-          <Switch>
-            <Route exact path="/" render={() => <ScreenOne />} />
-            <Route
-              exact
-              path="/organisation-profile"
-              render={() => <ScreenTwo />}
-            />
-            <Route exact path="/access-control" render={() => <ScreenOne />} />
-          </Switch>
+    <TableDataProvider>
+      <div className="App">
+        <Navbar />
+        <div className="main-wrapper">
+          <Sidebar />
+          <div className="route-wrapper">
+            <Switch>
+              <Route exact path="/" render={() => <ScreenOne />} />
+              <Route
+                exact
+                path="/organisation-profile"
+                render={() => <ScreenOne />}
+              />
+              <Route
+                exact
+                path="/access-control"
+                render={() => <ScreenOne />}
+              />
+            </Switch>
+          </div>
         </div>
       </div>
-    </div>
+    </TableDataProvider>
   );
 }
 
