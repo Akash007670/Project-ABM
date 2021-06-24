@@ -4,6 +4,13 @@
   min-height: calc(100vh - 4em);
   background: rgba(252, 251, 255, 1);
 }
+
+@media screen and (max-width: 900px) {
+  .sidebar-wrapper {
+    display: none;
+  }
+}
+
 .route-link {
   position: relative;
   width: calc(100% - 0.4em);
