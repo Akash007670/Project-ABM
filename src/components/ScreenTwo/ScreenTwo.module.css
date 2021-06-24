@@ -14,22 +14,6 @@
   border-bottom: 1px solid rgba(207, 211, 218, 0.5);
 }
 
-.back-nav-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  /* background: red; */
-}
-
-.nav-text {
-  font-weight: 500;
-  color: #673ab7;
-}
-
-.back-nav-wrapper > * + * {
-  margin: 0 0 0 1.5em;
-}
-
 .screen-wrapper {
   width: 100%;
   height: 100%;
