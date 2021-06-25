@@ -27,20 +27,28 @@ const Accordian = () => {
         <div className={Styles["permission-control"]}>
           <span>Permissions</span>
           <label>
-            <input type="checkbox" />
-            View items in access
+            <div className={Styles["label-wrapper"]}>
+              <input type="checkbox" />
+              View items in access
+            </div>
           </label>
           <label>
-            <input type="checkbox" />
-            Edit items in access
+            <div className={Styles["label-wrapper"]}>
+              <input type="checkbox" />
+              Edit items in access
+            </div>
           </label>
           <label>
-            <input type="checkbox" />
-            Create items in access
+            <div className={Styles["label-wrapper"]}>
+              <input type="checkbox" />
+              Create items in access
+            </div>
           </label>
           <label>
-            <input type="checkbox" />
-            Delete items in access
+            <div className={Styles["label-wrapper"]}>
+              <input type="checkbox" />
+              Delete items in access
+            </div>
           </label>
         </div>
       </div>
