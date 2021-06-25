@@ -197,6 +197,7 @@ const Table2 = ({ setShowTable, ...props }) => {
                       <Accordian />
                     </td>
                     <td>{}</td>
+                    <td />
                     <td>{data.lastUpdated}</td>
                     <td className={Styles["eye-logo"]}>
                       <ToggleLogo />
