@@ -47,9 +47,18 @@
   align-items: flex-start;
   flex: 1;
   margin-left: 18px;
-  gap: 8px;
+  gap: 5px;
 }
 .permission-control > label {
   display: flex;
   margin: 5px;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  height: 2rem;
+  width: 10rem;
 }
