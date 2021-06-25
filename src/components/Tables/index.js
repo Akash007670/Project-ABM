@@ -1,4 +1,4 @@
-import { useEffect, useContext } from "react";
+import { useEffect, useContext, useState } from "react";
 import Styles from "./tables.module.css";
 
 import { ReactComponent as AddLogo } from "../../assets/icons/add.svg";
@@ -6,10 +6,12 @@ import { ReactComponent as PencilLogo } from "../../assets/icons/pencil.svg";
 import { ReactComponent as DeleteLogo } from "../../assets/icons/delete.svg";
 import { ReactComponent as EyeLogo } from "../../assets/icons/eye.svg";
 import { ReactComponent as AddCircleLogo } from "../../assets/icons/add_circle_outline.svg";
+import { ReactComponent as SubLogo } from "../../assets/icons/subtract_circle_outline.svg";
 import { ReactComponent as ToggleLogo } from "../../assets/icons/on-label.svg";
 import { ReactComponent as BackLogo } from "../../assets/icons/arrow_back.svg";
 import { useHistory, useLocation } from "react-router-dom";
 import { TableContext } from "../../context";
+import Accordian from "../Accordian";
 
 const Table1 = ({ tableData, setShowTable, ...props }) => {
   const history = useHistory();
@@ -145,6 +147,13 @@ const Table2 = ({ setShowTable, ...props }) => {
   const gotoRoute = (route, state = null, search = "") => {
     history.replace({ pathname: route, state, search });
   };
+  const [clicked, setClicked] = useState(false);
+  const toggleHandler = (index) => {
+    if (clicked === index) {
+      return setClicked(null);
+    }
+    setClicked(index);
+  };
   return (
     <div className={Styles["table-container"]}>
       <div className={Styles["back-nav-wrapper"]}>
@@ -172,28 +181,48 @@ const Table2 = ({ setShowTable, ...props }) => {
             </tr>
           </thead>
           <tbody>
-            {tabledata2.map((data) => (
+            {tabledata2.map((data, index) => (
               <tr key={data.id} className={Styles["data-row"]}>
-                <td className={Styles["add-circle-logo"]}>
-                  <AddCircleLogo />
+                <td
+                  className={Styles["add-circle-logo"]}
+                  onClick={() => toggleHandler(index)}
+                  value={index}
+                >
+                  {clicked === index ? <SubLogo /> : <AddCircleLogo />}
                 </td>
-                <td>{data.department}</td>
-                <td>
-                  <div
-                    className={`${
-                      data.access === "All Access"
-                        ? Styles["access"]
-                        : Styles["restricted"]
-                    }`}
-                  >
-                    {data.access}
-                  </div>
-                </td>
-                <td>{data.summary ?? "je"}</td>
-                <td>{data.lastUpdated}</td>
-                <td className={Styles["eye-logo"]}>
-                  <ToggleLogo />
-                </td>
+                {clicked === index ? (
+                  <>
+                    <td>
+                      {data.department}
+                      <Accordian />
+                    </td>
+                    <td>{}</td>
+                    <td>{data.lastUpdated}</td>
+                    <td className={Styles["eye-logo"]}>
+                      <ToggleLogo />
+                    </td>
+                  </>
+                ) : (
+                  <>
+                    <td>{data.department}</td>
+                    <td>
+                      <div
+                        className={`${
+                          data.access === "All Access"
+                            ? Styles["access"]
+                            : Styles["restricted"]
+                        }`}
+                      >
+                        {data.access}
+                      </div>
+                    </td>
+                    <td>{data.summary ?? "je"}</td>
+                    <td>{data.lastUpdated}</td>
+                    <td className={Styles["eye-logo"]}>
+                      <ToggleLogo />
+                    </td>
+                  </>
+                )}
               </tr>
             ))}
           </tbody>
