@@ -12,11 +12,13 @@ import { ReactComponent as BackLogo } from "../../assets/icons/arrow_back.svg";
 import { useHistory, useLocation } from "react-router-dom";
 import { TableContext } from "../../context";
 import Accordian from "../Accordian";
+import FormModal from "./FormModal";
 
 const Table1 = ({ tableData, setShowTable, ...props }) => {
   const history = useHistory();
   const location = useLocation();
   const contextData = useContext(TableContext);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     let params = new URLSearchParams(location.search);
@@ -31,10 +33,11 @@ const Table1 = ({ tableData, setShowTable, ...props }) => {
   const gotoRoute = (route, state = null, search = "") => {
     history.replace({ pathname: route, state, search });
   };
+
   return (
     <div className={Styles["table-container"]}>
       <div className={Styles["table-header"]}>
-        <button className={Styles["add-role"]}>
+        <button className={Styles["add-role"]} onClick={() => setIsOpen(true)}>
           <AddLogo className={Styles["add-role-icon"]} />
           <p>Add Role</p>
         </button>
@@ -91,6 +94,7 @@ const Table1 = ({ tableData, setShowTable, ...props }) => {
           </tbody>
         </table>
       </div>
+      <FormModal open={isOpen} onClose={() => setIsOpen(false)} />
     </div>
   );
 };

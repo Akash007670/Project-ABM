@@ -38,6 +38,7 @@
 }
 .add-role > p {
   font-weight: 500;
+  cursor: pointer;
 }
 .add-role-icon {
   position: absolute;
@@ -46,6 +47,7 @@
   transform: translateY(-50%);
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 .add-role > * + * {
   margin: 0 0 0 1em;
